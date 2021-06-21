@@ -21,7 +21,7 @@ AC_ARG_ENABLE([pulse],
   [],
   [enable_pulse="auto"])
 AS_IF([test "x$enable_pulse" != "xno"],
-      [PKG_CHECK_MODULES(PULSE, [libpulse libpulse-mainloop-glib],
+      [PKG_CHECK_MODULES(PULSE, [libpulse libpulse-mainloop-glib libpulse-simple],
          [AC_DEFINE([HAVE_PULSE], 1, [Have PulseAudio support?])
           enable_pulse="yes"],
          [AS_IF([test "x$enable_pulse" = "xyes"],
