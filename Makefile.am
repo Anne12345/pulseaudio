@@ -9,8 +9,6 @@ SUBDIRS = .
 
 pulseaudio_SOURCES = \
 	main.c \
-    audio.c \
-    audio.h \
 	$(NULL)
 pulseaudio_LDFLAGS = \
 	$(NULL)
